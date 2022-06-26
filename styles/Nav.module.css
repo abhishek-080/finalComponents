@@ -1,0 +1,104 @@
+.navBar {
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0rem;
+    display: flex;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger {
+    margin-left: 2rem;
+  }
+  .hamburgerIcon {
+    font-size: 26px;
+    cursor: pointer;
+  }
+  .profileSection {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  .sideNavOpen {
+    display: block;
+  }
+  .sideNavClose {
+    display: none;
+  }
+  
+  .sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding-top: 1.4rem;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 20%;
+  }
+  .sideNavHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sideNavBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .sideNavItem1 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .sideNavItem2 {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  
+  .sideNavItem1:hover::after{
+      position: absolute;
+      content: "";
+      width: 7px;
+      z-index: 11;
+      height: 55px;
+      left: 0px;
+      top: 13%;
+      transition: 0.5 all ease-in-out;
+      background: #171717;
+  }
+  .sideNavItem2:hover::after{
+      position: absolute;
+      content: "";
+      width: 7px;
+      z-index: 11;
+      height: 55px;
+      left: 0px;
+      top: 20%;
+      transition: 0.5 all ease-in-out;
+      background: #171717;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .sideNav {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 500px) and (max-width: 800px) {
+    .sideNav {
+      width: 30%;
+    }
+  }
+  
