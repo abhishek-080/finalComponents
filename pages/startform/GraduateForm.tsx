@@ -19,7 +19,7 @@ const GraduateForm = () => {
 					{/* <!--begin::Content--> */}
 					<div className="d-flex flex-center flex-column flex-column-fluid">
 						{/* <!--begin::Wrapper--> */}
-						<div className="w-lg-800px p-10 p-lg-15 mx-auto">
+						<div className="col-sm-10 w-lg-500px  p-10 p-lg-15	 mx-auto">
 							{/* <!--begin::Form--> */}
 							<form className="my-auto pb-5"  id="kt_create_account_form">
 								{/* <!--begin::Step 1--> */}
@@ -144,7 +144,7 @@ const GraduateForm = () => {
 							</form>
 							{/* <!--end::Form--> */}
 							<div>
-										<button onClick={() => router.back()} type="button" className="btn btn-lg btn-primary d-inline-block" data-kt-stepper-action="previous">
+										<button onClick={() => router.back()} type="button" className="btn btn-lg btn-success d-inline-block" data-kt-stepper-action="previous">
                                             {/* <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg--> */}
 											 <span className="svg-icon svg-icon-4 ">
 											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -165,8 +165,8 @@ const GraduateForm = () => {
 				{/* <!--end::Body--> */}
 
 				{/* sideimage start */}
-				<div className="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten shadow-sm m-10">
-					<img src="../formWorker.png" alt="card" id="imgHover"  className="rounded w-100 mb-4" />
+				<div className="col-sm-8 col-md-10 d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten m-10">
+					<img src="../graduate2.gif" alt="card" id="imgHover"  className="rounded w-100 mb-4" />
 
 				</div>
 				{/* side image end */}

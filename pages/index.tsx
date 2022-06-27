@@ -8,18 +8,21 @@ import Sidebar from '../Components/Nav/Sidebar'
 import UserStart from './startform/UserStart'
 import GenerateCard from './startform/GenerateCard'
 import UserHome from './UserHome'
+import Signinmodules from'./Signinmodules'
 
 
 const Home: NextPage = () => {
   return (
     <div>
 
-      {/* <UserStart /> */}
-    <GenerateCard />
+      <UserStart />
+    {/* <GenerateCard /> */}
        {/* <NavbarGG /> */}
+       {/* <Signinmodules /> */}
       <div  className={styles.container}>
       
-        <UserHome /> 
+        {/* <UserHome />  */}
+
       </div>
     </div>
 
