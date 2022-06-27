@@ -1,6 +1,20 @@
 import Link from "next/link"
+import { useState } from "react"
 
 const UserStart = () => {
+
+	const [imageHover, setImageHover] = useState('hom1.gif')
+
+	const changeImageStudent=()=> {
+		const newImageHover1= 'formEducation.gif';
+		setImageHover(newImageHover1);
+	}
+
+	const changeImageWorker=()=> {
+		const newImageHover2='formWorker.gif';
+		setImageHover(newImageHover2);
+	}
+
   return (
     <div>
       <div className="d-flex flex-column flex-root">
@@ -41,7 +55,7 @@ const UserStart = () => {
 													<div className="col-lg-12">
 														{/* <!--begin::Option--> */}
 														<input type="radio" className="btn-check" name="account_type" value="personal" checked="checked" id="kt_create_account_form_account_type_personal" />
-														<label className="btn btn-outline btn-outline-light btn-outline-default p-7 d-flex align-items-center mb-10" htmlFor="kt_create_account_form_account_type_personal">
+														<label className="btn btn-outline btn-outline-light btn-outline-default p-7 d-flex align-items-center mb-10" htmlFor="kt_create_account_form_account_type_personal " onMouseOver={changeImageWorker}>
 															{/* <!--begin::Svg Icon | path: icons/duotune/communication/com005.svg--> */}
 															<span className="svg-icon svg-icon-3x me-5">
 																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -67,7 +81,7 @@ const UserStart = () => {
 													<div className="col-lg-12">
 														{/* <!--begin::Option--> */}
 														<input type="radio" className="btn-check" name="account_type" value="corporate" id="kt_create_account_form_account_type_corporate" />
-														<label className="btn btn-outline btn-outline-light btn-outline-default p-7 d-flex align-items-center" htmlFor="kt_create_account_form_account_type_corporate">
+														<label className="btn btn-outline btn-outline-light btn-outline-default p-7 d-flex align-items-center" htmlFor="kt_create_account_form_account_type_corporate" onMouseOver={changeImageStudent}>
 															{/* <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg--> */}
 															<span className="svg-icon svg-icon-3x me-5">
 																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -107,14 +121,12 @@ const UserStart = () => {
 
 				</div>
 				
-				{/* <!--end::Body--> */}
-
-				{/* sideimage start */}
-				<div className="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten  m-10">
-					<img src="../formWorker.png" alt="card" id="imgHover"  className="rounded w-100 mb-4" />
-
+				{/* starting of hover image section second column */}
+				<div className="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten m-10">					
+					<img src={imageHover} alt="card" id="imgHover"  className="rounded w-100" />
 				</div>
-				{/* side image end */}
+				{/* ending of hover image section second column */}
+
 				
 			</div>
 			{/* <!--end::Authentication - Multi-steps--> */}
