@@ -148,7 +148,7 @@ const StudentED = () => {
 							</form>
 							{/* <!--end::Form--> */}
 							<div>
-										<button onClick={() => router.back()} type="button" className="btn btn-lg btn-primary d-inline-block" data-kt-stepper-action="previous">
+										<button onClick={() => router.back()} type="button" className="btn btn-lg btn-success d-inline-block" data-kt-stepper-action="previous">
                                             {/* <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg--> */}
 											 <span className="svg-icon svg-icon-4 ">
 											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -169,8 +169,8 @@ const StudentED = () => {
 				{/* <!--end::Body--> */}
 
 				{/* sideimage start */}
-				<div className="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten shadow-sm m-10">
-					<img src="../formWorker.png" alt="card" id="imgHover"  className="rounded w-100 mb-4" />
+				<div className="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten m-10">
+					<img src="../university.gif" alt="card" id="imgHover"  className="rounded w-100 mb-4" />
 
 				</div>
 				{/* side image end */}
