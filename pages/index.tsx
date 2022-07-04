@@ -9,19 +9,21 @@ import UserStart from './startform/UserStart'
 import GenerateCard from './startform/GenerateCard'
 import UserHome from './UserHome'
 import Signinmodules from'./Signinmodules'
+import GGuserHome from './GGuserHome'
 
 
 const Home: NextPage = () => {
   return (
     <div>
 
-      <UserStart />
+      {/* <UserStart /> */}
     {/* <GenerateCard /> */}
        {/* <NavbarGG /> */}
-       {/* <Signinmodules /> */}
       <div  className={styles.container}>
+       {/* <Signinmodules /> */}
       
         {/* <UserHome />  */}
+        <GGuserHome />
 
       </div>
     </div>
