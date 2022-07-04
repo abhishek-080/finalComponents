@@ -162,3 +162,7 @@ const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
   )
 }
 export default Home;
+
+function setUser(user: any): any {
+  throw new Error('Function not implemented.');
+}
