@@ -2,37 +2,46 @@ import FollowSuggest from "../Components/Home/FollowSuggest"
 import Middlenav from "../Components/Home/Middlenav"
 import Posts from "../Components/Home/Posts"
 import Post_box from "../Components/Home/Post_box"
+import SideNav from "../Components/Home/SideNav"
 
 const GGuserHome = () => {
   return (
-    <div>
+    <div className="wrapper d-flex d-flex-column flex-row-fluid">
+      {/* Side Nav start */}
+      <div className="sidenav">
+        <SideNav />
+      </div>
+      {/* side nav end 
+      Profile Body start*/}
+      
+      <div>
         <div className="col-lg-5">
-            
-        <Post_box />
+        
+          <Post_box />
         </div>
         <Middlenav />
-            <div className="row">
-                <div className=" row posts col-lg-8">
-
-                <div className="col-lg-6 col-md-6">
-                  <Posts />
-                </div>
-                <div className="col-lg-6 col-md-6">
-                  <Posts />
-                </div>
-                <div className="col-lg-6 col-md-6">
-                  <Posts />
-                </div><div className="col-lg-6 col-md-6">
-                  <Posts />
-                </div>
-              
-                </div>
+        <div className="row">
+          <div className=" row posts col-lg-8">
+            <div className="col-lg-6 col-md-6">
+              <Posts />
+            </div>
+            <div className="col-lg-6 col-md-6">
+              <Posts />
+            </div>
+            <div className="col-lg-6 col-md-6">
+              <Posts />
+            </div><div className="col-lg-6 col-md-6">
+              <Posts />
+            </div>
+          </div>
       
               <div className="col-lg-4">
                   <FollowSuggest />
                 </div>
               </div>
         </div>
+        {/* Profile Body end */}
+    </div>
   )
 }
 
