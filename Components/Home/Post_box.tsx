@@ -1,5 +1,12 @@
+import React , { useState } from "react";
+import { Button } from "react-bootstrap";
+import PreviewImage from "../../pages/PreviewImage";
+import VerifyPhone from "../Registermodules/verifyphone"
 
 const Post_box = () => {
+
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <div>
 
@@ -174,13 +181,13 @@ const Post_box = () => {
           </button>
         </div>
         <div className="subform">
-        {/* <form id="kt_forms_widget_1_form" className="ql-quil ql-quil-plain pb-3"> */}
+        <form id="kt_forms_widget_1_form" className="ql-quil ql-quil-plain pb-3">
 													{/* <!--begin::Editor--> */}
-													{/* <div id="kt_forms_widget_1_editor" className="py-6 ql-container ql-snow"><div className="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="What is on your mind ?"><p></p></div><div className="ql-clipboard" contenteditable="true" tabindex="-1"></div><div className="ql-tooltip ql-hidden"><a className="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL" /><a className="ql-action"></a><a className="ql-remove"></a></div></div> */}
+													<div id="kt_forms_widget_1_editor" className="py-6 ql-container ql-snow"><div className="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="What is on your mind ?"><p></p></div><div className="ql-clipboard" contenteditable="true" tabindex="-1"></div><div className="ql-tooltip ql-hidden"><a className="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL" /><a className="ql-action"></a><a className="ql-remove"></a></div></div>
 													{/* <!--end::Editor--> */}
-													{/* <div className="separator"></div> */}
+													<div className="separator"></div>
 													{/* <!--begin::Toolbar--> */}
-													{/* <div id="kt_forms_widget_1_editor_toolbar" className="ql-toolbar d-flex flex-stack py-2 ql-snow">
+													<div id="kt_forms_widget_1_editor_toolbar" className="ql-toolbar d-flex flex-stack py-2 ql-snow">
 														<div className="me-2">
 														
 															<span className="ql-formats">
@@ -201,9 +208,9 @@ const Post_box = () => {
 																<i className="flaticon2-pin icon-ms"></i>
 															</span>
 														</div>
-													</div> */}
+													</div>
 													{/* <!--end::Toolbar--> */}
-												{/* </form> */}
+												</form>
         </div>
       </div>
     </div>
@@ -235,10 +242,29 @@ const Post_box = () => {
         justify-content-center
       "
       role="button"
+       onClick={() => setModalShow(true)}
+      
     >
+      
       <i className="fas fa-photo-video me-2 text-success"></i>
       <p className="m-0 text-muted">Photo/Video</p>
+      
+      {/* <Button  id="kt_sign_in_submit" className="btn btn-lg btn-success w-100 mb-5" onClick={() => setModalShow(true)} style={{backgroundColor:"#180A0A", color:"white"}}>
+                <span className="indicator-label">Continue</span>         
+                <span className="indicator-progress">Please wait...
+                <span className="spinner-border spinner-border-sm align-middle ms-2"></span></span>  
+              </Button>
+              <VerifyPhone
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        /> */}
+        
     </div>
+    <PreviewImage
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+
     {/* <!-- a 3 --> */}
     <div
       className="
