@@ -10,6 +10,8 @@ import GenerateCard from './startform/GenerateCard'
 import UserHome from './UserHome'
 import Signinmodules from'./Signinmodules'
 import GGuserHome from './GGuserHome'
+import SideRegister from '../Components/Asideregisters/register'
+import SideLogin from '../Components/Asideregisters/login'
 
 
 const Home: NextPage = () => {
@@ -24,6 +26,8 @@ const Home: NextPage = () => {
       
         {/* <UserHome />  */}
         <GGuserHome />
+        {/* <SideRegister/> */}
+        {/* <SideLogin/> */}
 
       </div>
     </div>

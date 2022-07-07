@@ -8,7 +8,7 @@ import {TiShoppingBag} from 'react-icons/ti'
 
 const Dash_activities = () => {
   return (
-<div >
+<div className=''>
 
     <div className="card mb-5 mb-lg-6 ">
 	    {/* <!--begin::Header--> */}

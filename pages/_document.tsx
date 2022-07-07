@@ -42,7 +42,7 @@ const Document:NextPage=()=> {
       <script  src="/assets/plugins/global/plugins.bundle.js"></script>
       <script  src="/assets/js/scripts.bundle.js"></script> */}
     </Head>
-      <body  id="kt_body" className="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed  ">
+      <body  id="kt_body" className="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed  bg-white">
         <Main />
         <NextScript />
 

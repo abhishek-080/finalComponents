@@ -1,23 +1,46 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import axios from 'axios'
+import Axios  from 'axios'
 // import Icon from '../app/utils/Icons'
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux'
-import { Button } from 'react-bootstrap';
-import PreviewImage from '../../pages/previewImage';
 // import userSlice from '../states/slices/userSlice';
+import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
+import { Button } from 'react-bootstrap';
+import VerifyPhone from '../Registermodules/verifyphone';
 
 
 
-const SideLogin = () => {
-  
-  const [modalShow, setModalShow] = React.useState(false);
+
+const SideRegister = () => {
+    const [defaultPassword,setValue] = useState('password');
+    const [icon, setIcon] = useState(<AiOutlineEyeInvisible/>);
+
+    const [modalShow, setModalShow] = React.useState(false);
+
+    const toggleValue = () => {
+        if(defaultPassword === 'password')
+        {
+            setValue('text')
+            setIcon(<AiOutlineEye/>)
+        }else
+        {
+            setValue('password')
+            setIcon(<AiOutlineEyeInvisible/>)
+        }
+    }
+
+      
+
+
 
   return (
     <div>
-      <div className="d-flex flex-column flex-root p-0  ">
+        <div className="d-flex flex-column flex-root p-0  ">
+
+          {/* <span>{username1}heheheh </span>
+          <button  onClick={getUsername1}>mero button</button> */}
 			{/* <!--begin::Authentication - Sign-in --> */}
 			<div className=" d-flex flex-column flex-lg-row flex-column-fluid">
 				{/* <!--begin::Aside--> */}
@@ -61,13 +84,13 @@ const SideLogin = () => {
             <div className="text-center mb-10">
               { /*begin::Title */ }
               
-              <h1 className="text-dark mb-3">Sign In to GG</h1>
+              <h1 className="text-dark mb-3">Create an account</h1>
               { /*end::Title */ }
               { /*begin::Link */ }
-              <div className="text-gray-400 fw-bold fs-4">Dont have an account?
-              <Link href="./Components/Registermodules/register">
+              <div className="text-gray-400 fw-bold fs-6">Get started with your free account today
+              {/* <Link href="./Components/Registermodules/register">
                 <a className="link-primary fw-bolder">Register</a>
-              </Link>
+              </Link> */}
               </div>
               { /*end::Link */ }
             </div>
@@ -75,20 +98,28 @@ const SideLogin = () => {
             { /*begin::Input group */ }
             <div className="fv-row mb-10">
               { /*begin::Label */ }
-              <label className="form-label fs-6 fw-bolder text-dark">Email</label>
+              <label className="form-label fs-6 fw-bolder text-dark">Phone number</label>
               { /*end::Label */ }
               { /*begin::Input */ }
+              <div className="phone-input mb-2" >
+              <select className="form-select" id="country-codes" name="country-codes">
+                    <option selected>Nepal (+977)</option>
+                    <option value="india">India (+91)</option>
+                    <option value="china">China (+86)</option>
+                    <option value="bangladesh">Bangladesh (+880)</option>
+                  </select>     
               <input className="form-control form-control-lg form-control-solid" 
                   type="text" 
-                  name="email" 
+                  name="phone" 
                   autoComplete="off" 
                 //   value={email} 
                 //   onChange={(e) => setEmail(e.target.value)}
               />
               { /*end::Input */ }
+              </div>
+              <h6 className="text-dark mb-2 fw-bolder "> We'll text you to confirm your number</h6>
             </div>
-            { /*end::Input group */ }
-            { /*begin::Input group */ }
+
             <div className="fv-row mb-10">
               { /*begin::Wrapper */ }
               <div className="d-flex flex-stack mb-2">
@@ -101,26 +132,50 @@ const SideLogin = () => {
                 </Link>
                 { /*end::Link */ }
               </div>
-              { /*end::Wrapper */ }
-              { /*begin::Input */ }
+              <div className=''>
               <input className="form-control form-control-lg form-control-solid" 
-                type="password" 
+                type={defaultPassword} 
                 name="password" 
                 autoComplete="off" 
+                style={{position:"relative"}}
                 // value={password}
                 // onChange={(e) => setPassword(e.target.value)}
               />
               { /*end::Input */ }
+              <i onClick={toggleValue} className="fa-2x" style={{position:"absolute",top:"28rem",right:"23rem"}}>{icon}</i>
+              </div>
+
+              { /*end::Wrapper */ }
+              { /*begin::Input */ }
+
             </div>
             { /*end::Input group */ }
             { /*begin::Actions */ }
             <div className="text-center">
               { /*begin::Submit button */ }
-              <button type="submit" id="kt_sign_in_submit" className="btn btn-lg btn-success w-100 mb-5" style={{backgroundColor:"#180A0A", color:"white"}}>
-                <span className="indicator-label">Continue</span>
+             
+              <Button  id="kt_sign_in_submit" className="btn btn-lg btn-success w-100 mb-5" onClick={() => setModalShow(true)} style={{backgroundColor:"#180A0A", color:"white"}}>
+                <span className="indicator-label">Continue</span>         
                 <span className="indicator-progress">Please wait...
-                <span className="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-              </button>
+                <span className="spinner-border spinner-border-sm align-middle ms-2"></span></span>  
+              </Button>
+              <VerifyPhone
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+              
+              {/* <div> 
+        <Button variant="primary" onClick={() => setModalShow(true)}>
+          Launch vertically centered modal
+        </Button>
+        <VerifyPhone1
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+        </div> */}
+          
+
+            
               { /*end::Submit button */ }
               { /*begin::Separator */ }
               <div className="d-flex flex-nowrap justify-content-center m-5">  
@@ -157,19 +212,10 @@ const SideLogin = () => {
                       className="h-20px"
                     />
                   </button>
-
-                  <Button  id="kt_sign_in_submit" className="btn btn-lg btn-success w-100 mb-5" onClick={() => setModalShow(true)} style={{backgroundColor:"#180A0A", color:"white"}}>
-                <span className="indicator-label">Continue</span>         
-                <span className="indicator-progress">Please wait...
-                <span className="spinner-border spinner-border-sm align-middle ms-2"></span></span>  
-              </Button>
-              <PreviewImage
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        />
                   {/* <!--end::Google link--*/}
                   
                 </div>
+                <h6 className="text-dark mb-3 ">Already have an account? <Link href="#"><a style={{textDecoration:"underline", color:"blue"}}>Sign in</a></Link></h6>
               { /*end::Google link */ }
             </div>
             { /*end::Actions */ }
@@ -186,12 +232,14 @@ const SideLogin = () => {
 				{/* <!--end::Body--> */}
 			</div>
 			{/* <!--end::Authentication - Sign-in--> */}
+    
 	</div>
+
     </div>
   )
 }
 
-export default SideLogin
+export default SideRegister
 
 function setUser(user: any): any {
   throw new Error('Function not implemented.');

@@ -65,6 +65,7 @@ const Posts = () => {
 													<p className="text-gray-800 fw-normal mb-5">Outlines keep you honest. They stop you from indulging in poorly thought-out metaphors about driving and keep you focused on the overall structure of your post</p>
 													{/* <!--end::Text-->
 													<!--begin::Toolbar--> */}
+													<img src="./working-man.gif" alt="" width="250px" />
 													<div className="d-flex align-items-center mb-5">
 														<a href="#" className="btn btn-sm btn-light btn-color-muted btn-active-light-success px-4 py-2 me-4">
 														{/* <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg--> */}
