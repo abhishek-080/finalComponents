@@ -1,6 +1,8 @@
 .user-display{
     background-color: black;
 }
-/* .btn{
-    width: 80%;
-} */
+.trends:hover{
+    background-color: lightblue;
+    filter: brightness(121%);
+    border-radius: 5px;
+  }

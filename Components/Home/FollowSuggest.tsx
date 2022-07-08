@@ -3,7 +3,7 @@ import { Accordion } from 'react-bootstrap'
 
 const FollowSuggest = () => {
   return (
-    <div className='mt-3 rounded shadow ' >
+    <div className='mt-3 rounded border ' >
 		
 		
 		<Accordion defaultActiveKey="0">
@@ -15,17 +15,17 @@ const FollowSuggest = () => {
 	</Accordion.Header>
 			</div>
     <Accordion.Body>
-	<div className="card card-xl-stretch mt-4">
+	<div className="card card-xl-stretch mt-4 ">
 			{/* <!--begin::Header--> */}
 			
 			{/* <!--end::Header-->
 			<!--begin::Body--> */}
-			<div className="card-body pt-2 p-0">
+			<div className="card-body p-0">
 				{/* <!--begin::Item--> */}
-				<div className="d-flex align-items-center mb-7">
+				<div className="d-flex align-items-center mb-7 ">
 					{/* <!--begin::Avatar--> */}
-					<div className="symbol symbol-50px me-5">
-						<img src="/assets/media/avatars/300-6.jpg" className="" alt="" />
+					<div className="symbol symbol-50px me-5 ">
+						<img src="/assets/media/avatars/300-6.jpg" className="rounded-circle" alt="" />
 					</div>
                     
 					{/* <!--end::Avatar-->
@@ -44,7 +44,7 @@ const FollowSuggest = () => {
 				<div className="d-flex align-items-center mb-7">
 					{/* <!--begin::Avatar--> */}
 					<div className="symbol symbol-50px me-5">
-						<img src="/assets/media/avatars/300-5.jpg" className="" alt="" />
+						<img src="/assets/media/avatars/300-5.jpg" className="rounded-circle" alt="" />
 					</div>
 					{/* <!--end::Avatar-->
 					<!--begin::Text--> */}
@@ -62,7 +62,7 @@ const FollowSuggest = () => {
 				<div className="d-flex align-items-center mb-7">
 					{/* <!--begin::Avatar--> */}
 					<div className="symbol symbol-50px me-5">
-						<img src="/assets/media/avatars/300-11.jpg" className="" alt="" />
+						<img src="/assets/media/avatars/300-11.jpg" className="rounded-circle" alt="" />
 					</div>
 					{/* <!--end::Avatar-->
 					<!--begin::Text--> */}
@@ -80,7 +80,7 @@ const FollowSuggest = () => {
 				<div className="d-flex align-items-center mb-7">
 					{/* <!--begin::Avatar--> */}
 					<div className="symbol symbol-50px me-5">
-						<img src="/assets/media/avatars/300-9.jpg" className="" alt="" />
+						<img src="/assets/media/avatars/300-9.jpg" className="rounded-circle" alt="" />
 					</div>
 					{/* <!--end::Avatar-->
 					<!--begin::Text--> */}

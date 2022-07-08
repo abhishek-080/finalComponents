@@ -6,7 +6,7 @@ const Middlenav = () => {
         <div className="card-body pb-0 middleNav" style={{ position: "sticky", top:"20px"}} >
                 {/* <!--begin::Header--> */} 
                 
-                    <div className="row ">
+                    <div className="row border rounded">
 						
 						
                     <ul className="d-flex justify-content-center nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder bg-white p-3 rounded">

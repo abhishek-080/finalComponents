@@ -10,7 +10,7 @@ const Post_box = () => {
 
 			{/* <!-- create post --> */}
 
- <div className="bg-white p-3 mt-3 rounded border shadow">
+ <div className="bg-white p-3 mt-3 rounded border ">
     {/* <!-- avatar --> */}
     <div className="d-flex" role="button">
       <div className="p-1">
