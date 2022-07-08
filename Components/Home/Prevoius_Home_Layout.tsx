@@ -1,37 +1,27 @@
 
 const Posts = () => {
-  return (
-        <div>
-          <div className="card-body pb-0 p-5 border bg-white mt-4 rounded">
+    return (
+      <div>
+          <div className="card-body pb-0 bg-white mt-4 rounded">
               {/* <!--begin::Header--> */}
               <div className="d-flex align-items-center mb-5">
                   {/* <!--begin::User--> */}
                   <div className="d-flex align-items-center flex-grow-1">
                       {/* <!--begin::Avatar--> */}
-                      <div className="symbol symbol-60px me-4">
-                          <img src="/assets/media/avatars/300-1.jpg" alt="" style={{borderRadius:"100px"}}/>
+                      <div className="symbol symbol-45px me-5">
+                          <img src="/assets/media/avatars/300-1.jpg" alt="" />
                       </div>
                       {/* <!--end::Avatar-->
                       <!--begin::Info--> */}
-                      <div className="d-flex flex-row mt-n6 ms-2">
-                        <div className="userName">
-
-                          <a href="#" className="text-gray-900 text-hover-primary fs-3 f-bold fw-bolder">Sishir Dali</a>
-                        </div>
-                        <div className="postTime p-1 ms-1">
-                            
-                          <span className="text-gray-400 fw-bold">#genius</span>
-                        </div>
-                        <div className="postTime p-1 ms-1">
-                            
+                      <div className="d-flex flex-column">
+                          <a href="#" className="text-gray-900 text-hover-primary fs-6 fw-bolder">shirish Dali</a>
                           <span className="text-gray-400 fw-bold">2h</span>
-                        </div>
                       </div>
                       {/* <!--end::Info--> */}
                   </div>
                   {/* <!--end::User-->
                   <!--begin::Menu--> */}
-                  <div className="my-0 mt-n6">
+                  <div className="my-0">
                       <button type="button" className="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                           {/* <!--begin::Svg Icon | path: icons/duotune/general/gen024.svg--> */}
                           <span className="svg-icon svg-icon-2">
@@ -72,15 +62,15 @@ const Posts = () => {
               <!--begin::Post--> */}
               <div className="mb-5">
                   {/* <!--begin::Text--> */}
-                  <div className="post-content ms-20 mt-n17 p-5" >
-                      <p className="text-gray-800 fs-5 fw-normal mb-5">Outlines keep you honest. They stop you from indulging in poorly thought-out metaphors about driving and keep you focused on the overall structure of your post</p>
-                      {/* <div className="posted-img mt-3">
-                          <img src="../post.jpg" alt="" className="w-100 mb-5 rounded" style={{height:"450px"}}/>
+                  <div className="post-content mt-10">
+                      <p className="text-gray-800 fw-normal mb-5">Outlines keep you honest. They stop you from indulging in poorly thought-out metaphors about driving and keep you focused on the overall structure of your post</p>
+                      {/* <div className="posted-img">
+                          <img src="/assets/media/avatars/300-1.jpg" alt="" className="w-100"/>
                       </div> */}
                   </div>
                   {/* <!--end::Text-->
                   <!--begin::Toolbar--> */}
-                  <div className="d-flex align-items-center mb-5 ms-20 ps-6">
+                  <div className="d-flex align-items-center mb-5">
                       <a href="#" className="btn btn-sm btn-light btn-color-muted btn-active-light-success px-4 py-2 me-4">
                       {/* <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg--> */}
                       <span className="svg-icon svg-icon-3">
@@ -130,8 +120,7 @@ const Posts = () => {
           </div>
       </div>
       
-    
-  )
-}
-
-export default Posts
+    )
+  }
+  
+  export default Posts

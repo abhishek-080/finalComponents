@@ -76,3 +76,15 @@ input[id=email] {
 /* .acc-signup{
     cursor:"pointer"; margin-top:"4px"}}    
 } */
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
