@@ -26,7 +26,7 @@ const PreviewImage = (props) => {
  
   return (
    
-    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <Modal {...props} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
 		  <Modal.Header closeButton>
 			<Modal.Title id="contained-modal-title-vcenter">
 			  Upload your photo or video
@@ -51,6 +51,7 @@ const PreviewImage = (props) => {
               src={URL.createObjectURL(selectedImage)}
               style={styles.image}
               alt="Thumb"
+              
             />
             <button onClick={removeSelectedImage} style={styles.delete}>
               Remove This Image
@@ -80,7 +81,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
   },
-  image: { maxWidth: "100%", maxHeight: 320 },
+  image: { maxWidth: "50%", maxHeight: 200 },
   delete: {
     cursor: "pointer",
     padding: 15,

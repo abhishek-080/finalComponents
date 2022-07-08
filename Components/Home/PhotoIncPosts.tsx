@@ -1,8 +1,8 @@
 
-const Posts = () => {
-  return (
-        <div>
-          <div className="card-body pb-0 p-5 border bg-white mt-4 rounded">
+const PhotoIncPosts = () => {
+    return (
+      <div>
+          <div className="card-body pb-0 bg-white mt-4 rounded">
               {/* <!--begin::Header--> */}
               <div className="d-flex align-items-center mb-5">
                   {/* <!--begin::User--> */}
@@ -74,9 +74,9 @@ const Posts = () => {
                   {/* <!--begin::Text--> */}
                   <div className="post-content ms-20 mt-n17 p-5" >
                       <p className="text-gray-800 fs-5 fw-normal mb-5">Outlines keep you honest. They stop you from indulging in poorly thought-out metaphors about driving and keep you focused on the overall structure of your post</p>
-                      {/* <div className="posted-img mt-3">
+                      <div className="posted-img mt-3">
                           <img src="../post.jpg" alt="" className="w-100 mb-5 rounded" style={{height:"450px"}}/>
-                      </div> */}
+                      </div>
                   </div>
                   {/* <!--end::Text-->
                   <!--begin::Toolbar--> */}
@@ -130,8 +130,7 @@ const Posts = () => {
           </div>
       </div>
       
-    
-  )
-}
-
-export default Posts
+    )
+  }
+  
+  export default PhotoIncPosts

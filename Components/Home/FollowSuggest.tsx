@@ -3,16 +3,24 @@ import { Accordion } from 'react-bootstrap'
 
 const FollowSuggest = () => {
   return (
-    <div>
-		<div className="card card-xl-stretch mt-4">
-			{/* <!--begin::Header--> */}
-			<div className="card-header border-0">
+    <div className='mt-3 rounded shadow ' >
+		
+		
+		<Accordion defaultActiveKey="0">
+  <Accordion.Item eventKey="0">
+	<div className="card-header border-0">
+    <Accordion.Header className="bg-light">
 				<h3 className="card-title fw-bolder text-dark">Follow Suggestions</h3>
 				
+	</Accordion.Header>
 			</div>
+    <Accordion.Body>
+	<div className="card card-xl-stretch mt-4">
+			{/* <!--begin::Header--> */}
+			
 			{/* <!--end::Header-->
 			<!--begin::Body--> */}
-			<div className="card-body pt-2">
+			<div className="card-body pt-2 p-0">
 				{/* <!--begin::Item--> */}
 				<div className="d-flex align-items-center mb-7">
 					{/* <!--begin::Avatar--> */}
@@ -89,38 +97,15 @@ const FollowSuggest = () => {
                     <button className="btn btn-md btn-primary">View More</button>
                 </div>
 				{/* <!--end::Item--> */}
-				
-			</div>
+				</div>
 			{/* <!--end::Body--> */}
 		</div>
-		<Accordion defaultActiveKey="0">
-  <Accordion.Item eventKey="0">
-    <Accordion.Header>Accordion Item #1</Accordion.Header>
-    <Accordion.Body>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="1">
-    <Accordion.Header>Accordion Item #2</Accordion.Header>
-    <Accordion.Body>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+				
     </Accordion.Body>
   </Accordion.Item>
 </Accordion>
 		{/* <!--end::List Widget 2--> */}
-	</div>
+		</div>
   )
 }
 
