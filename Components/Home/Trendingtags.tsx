@@ -2,7 +2,7 @@ import React from 'react'
 
 const Trendingtags = () => {
   return (
-    <div className='mt-3 rounded shadow bg-white ' >
+    <div className='mt-3 rounded border bg-white ' >
 		
 
 <div className="card-header border-0 p-7">
@@ -10,13 +10,33 @@ const Trendingtags = () => {
             
         </div>
 <div className="card card-xl-stretch mt-4">
-        {/* <!--begin::Header--> */}
-        
-        {/* <!--end::Header-->
+            <hr className='mt-n4 '/>
+        {/* 
         <!--begin::Body--> */}
-        <div className=" card-body pt-2">
+        <div className=" card-body p-0 mt-2">
             {/* <!--begin::Item--> */}
-            <div className="d-flex align-items-center mb-7 " >
+            <div className="d-flex align-items-center mb-7 trends  ps-5 pe-5 p1-2 pb-2" >
+                {/* <!--begin::Text--> */}
+                <div className="flex-grow-1 hover-primary">
+
+                        <a href="#" className="text-dark fw-bolder">
+                            <p className=' fs-2 fst-italic '># Going Genius</p>
+                            {/* <span className="text-muted d-block fw-bold mt-n2">Sports</span> */}
+                            <figcaption className="blockquote-footer">
+                                    <cite title="Source Title">National</cite>
+                            </figcaption>
+                        </a>
+                </div>
+                {/* <!--end::Text--> */}
+                <div className="follow-btn">
+                    <button className='btn btn-sm'>
+                        <i className='bi bi-three-dots fs-3'></i>
+                    </button>
+                </div>
+            </div>
+            {/* <!--end::Item-->
+            <!--begin::Item--> */}
+            <div className="d-flex align-items-center mb-7 trends  ps-5 pe-5 p1-2 pb-2">
                 {/* <!--begin::Avatar--> */}
                 {/* <!--end::Avatar-->
                 <!--begin::Text--> */}
@@ -39,7 +59,7 @@ const Trendingtags = () => {
             </div>
             {/* <!--end::Item-->
             <!--begin::Item--> */}
-            <div className="d-flex align-items-center mb-7 ">
+            <div className="d-flex align-items-center mb-7 trends  ps-5 pe-5 p1-2 pb-2">
                 {/* <!--begin::Avatar--> */}
                 {/* <!--end::Avatar-->
                 <!--begin::Text--> */}
@@ -62,30 +82,7 @@ const Trendingtags = () => {
             </div>
             {/* <!--end::Item-->
             <!--begin::Item--> */}
-            <div className="d-flex align-items-center mb-7 ">
-                {/* <!--begin::Avatar--> */}
-                {/* <!--end::Avatar-->
-                <!--begin::Text--> */}
-                <div className="flex-grow-1">
-
-                        <a href="#" className="text-dark fw-bolder">
-                            <p className=' fs-2 fst-italic '># Going Genius</p>
-                            {/* <span className="text-muted d-block fw-bold mt-n2">Sports</span> */}
-                            <figcaption className="blockquote-footer">
-                                    <cite title="Source Title">National</cite>
-                            </figcaption>
-                        </a>
-                </div>
-                {/* <!--end::Text--> */}
-                <div className="follow-btn">
-                    <button className='btn btn-sm'>
-                        <i className='bi bi-three-dots fs-3'></i>
-                    </button>
-                </div>
-            </div>
-            {/* <!--end::Item-->
-            <!--begin::Item--> */}
-            <div className="d-flex align-items-center mb-7 ">
+            <div className="d-flex align-items-center mb-7 trends  ps-5 pe-5 p1-2 pb-2">
                 {/* <!--begin::Avatar--> */}
                 {/* <!--end::Avatar-->
                 <!--begin::Text--> */}

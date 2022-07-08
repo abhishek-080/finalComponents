@@ -2,7 +2,7 @@
 const Posts = () => {
   return (
         <div>
-          <div className="card-body pb-0 p-5 border bg-white mt-4 rounded">
+          <div className="card-body pb-0 p-5 border shadow bg-white mt-4 rounded">
               {/* <!--begin::Header--> */}
               <div className="d-flex align-items-center mb-5">
                   {/* <!--begin::User--> */}

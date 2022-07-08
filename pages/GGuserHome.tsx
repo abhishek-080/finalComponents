@@ -1,3 +1,4 @@
+import CardShowBox from "../Components/Home/CardShowBox"
 import FollowSuggest from "../Components/Home/FollowSuggest"
 import Middlenav from "../Components/Home/Middlenav"
 import PhotoIncPosts from "../Components/Home/PhotoIncPosts"
@@ -8,7 +9,7 @@ import Trendingtags from "../Components/Home/Trendingtags"
 
 const GGuserHome = () => {
   return (
-    <div className="wrapper d-flex d-flex-column flex-row-fluid bg-white">
+    <div className="wrapper d-flex d-flex-column bg-white flex-row-fluid">
       {/* Side Nav start */}
       <div className="sidenav">
         <SideNav />
@@ -53,13 +54,17 @@ const GGuserHome = () => {
 
         {/* posts end
         follow suggest box start */}
-        <div className="col-lg-4 ms-7 " style={{position:"sticky", top:"0"}}>
-            <div className="">
+        <div className="col-lg-4 ms-7 bg-light border-left border border-right-0 ms-2" style={{position:"sticky", top:"0"}}>
+            <div className="ms-5">
+              <CardShowBox />
+          
+            </div>
+            <div className="ms-5">
               <Trendingtags />
           
             </div>
+            <div className="ms-5">
               <FollowSuggest />
-            <div>
 
             </div>
         </div>
