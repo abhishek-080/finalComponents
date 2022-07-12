@@ -33,6 +33,9 @@ const Document:NextPage=()=> {
 		<!--begin::Global Stylesheets Bundle(used by all pages)--> */}
 		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>
+
 {/* 
      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="shortcut icon" href="https://goinggenius.com.np/gg-front/assets/img/favicon.png" />
@@ -50,7 +53,11 @@ const Document:NextPage=()=> {
         <Script src="/assets/js/scripts.bundle.js" strategy="lazyOnload"  /> */}
         {/* <script  src="/assets/plugins/global/plugins.bundle.js" id="plugin_bundle_script"   ></script>
         <script  src="/assets/js/scripts.bundle.js" id="compiled_script"   ></script> */}
-      
+
+		
+		
+		<script src="assets/vendor/aos/aos.js"></script>
+
         <script>var hostUrl = "assets/";</script>
 		{/* <!--begin::Global Javascript Bundle(used by all pages)--> */}
 	  	<script src="assets/plugins/global/plugins.bundle.js"></script>
