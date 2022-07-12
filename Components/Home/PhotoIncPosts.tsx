@@ -1,10 +1,9 @@
 import Link from "next/link"
 
-const Posts = () => {
-  return (
-    <div>
-        
-    <div className="card-body pb-0 bg-white mt-4 rounded border">
+const PhotoIncPosts = () => {
+    return (
+      <div>
+          <div className="card-body pb-0 bg-white mt-4 rounded border">
         {/* <!--begin::Header--> */}
         <div className="d-flex align-items-center mb-5">
             {/* <!--begin::User--> */}
@@ -18,13 +17,12 @@ const Posts = () => {
                 
                 <div className="d-flex flex-column">
                     <a href="#" className="text-gray-900 text-hover-primary fs-6 fw-bolder">shirish Dali</a>
-                    
-                    <div className="postTime"> 
-                            <Link href={"/#"}>
+
+                    <div className="postTime">    
+                    <Link href={"#"}>
                                 <span className="text-gray-400 fw-bold">#genius</span>
                             
-                            </Link>
-                        {/* <span className="text-gray-400 fw-bold">#genius </span>     */}
+                            </Link>  
                         <span className="text-gray-400 fw-bold">. 2h</span>
                     </div>
                 </div>
@@ -35,9 +33,9 @@ const Posts = () => {
             <div className="my-0">
                 <button type="button" className="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                     {/* <!--begin::Svg Icon | path: icons/duotune/general/gen024.svg--> */}
-                    
+                    {/* <span className="svg-icon svg-icon-2"> */}
                         <i className='bi bi-three-dots fs-3'></i>
-                  
+                    {/* </span> */}
                     {/* <!--end::Svg Icon--> */}
                 </button>
                 {/* <!--begin::Menu 2--> */}
@@ -45,16 +43,16 @@ const Posts = () => {
     
                     {/* <!--end::Menu item-->
                     <!--begin::Menu separator--> */}
-                    <div className="separator mb-3 opacity-75"></div>
+                    {/* <div className="separator mb-3 opacity-75"></div> */}
                     {/* <!--end::Menu separator-->
                     <!--begin::Menu item--> */}
-                    <div className="menu-item px-3">
-                        <a href="#" className="menu-link px-3">View Thread</a>
+                    <div className="menu-item">
+                        <a href="#" className="menu-link px-5">View Thread</a>
                     </div>
                     {/* <!--end::Menu item-->
                     <!--begin::Menu item--> */}
-                    <div className="menu-item px-3">
-                        <a href="#" className="menu-link px-3">Save</a>
+                    <div className="menu-item">
+                        <a href="#" className="menu-link px-5">Save</a>
                     </div>
                     {/* <!--end::Menu item--> */}
                 </div>
@@ -68,46 +66,54 @@ const Posts = () => {
             {/* <!--begin::Text--> */}
             <div className="post-content">
                 <p className="text-gray-800 fs-5 fw-normal mb-5">Outlines keep you honest. They stop you from indulging in poorly thought-out metaphors about driving and keep you focused on the overall structure of your post</p>
-                {/* <div className="posted-img ">
-                    <img src="/assets/media/avatars/300-1.jpg" alt="" className="w-100 " style={{height:"450px"}}/>
-                </div> */}
+                <Link href={"#"}>
+
+                    <div className="posted-img ms-n4 me-n4">
+                        <img src="../post.jpg" alt="" className="w-100 mb-5" style={{height:"450px"}}/>
+                    </div>
+                </Link>
             </div>
 
             {/* {/* <!--end::Text--> 
             begin like counts*/}
             <div className="d-flex flex-row justify-content-between mb-n1 ms-2 me-2">
                 <div className="likes p-1 fs-4">
-                <a href="#" className="text-muted w-100 text-primary">
+                <span className="text-muted w-100 text-primary">
                     {/* <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg--> */}
-                    <span className="svg-icon svg-icon-1">
-                    <img src="../lik2.png" alt="" width="auto" height="25" />
-
-                    </span>
+                    <Link href={"#"}>
+                        <span className="svg-icon svg-icon-5">
+                                {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <path d="M18.3721 4.65439C17.6415 4.23815 16.8052 4 15.9142 4C14.3444 4 12.9339 4.73924 12.003 5.89633C11.0657 4.73913 9.66 4 8.08626 4C7.19611 4 6.35789 4.23746 5.62804 4.65439C4.06148 5.54462 3 7.26056 3 9.24232C3 9.81001 3.08941 10.3491 3.25153 10.8593C4.12155 14.9013 9.69287 20 12.0034 20C14.2502 20 19.875 14.9013 20.7488 10.8593C20.9109 10.3491 21 9.81001 21 9.24232C21.0007 7.26056 19.9383 5.54462 18.3721 4.65439Z" fill="currentColor"></path>
+                              </svg> */}
+                              <img src="../lik2.png" alt="" width="20" height="auto" />
+                             {/* <!--end::Svg Icon--> */}
+                            {/* comments and likes */}
+                            <a href="#" > 120</a>
+                        </span>
+                    </Link>
                     
-                    {/* <!--end::Svg Icon--> */}
-                    {/* comments and likes */}
-                    120
-                    </a>
+                   
+                    </span>
                 </div>
                 <div className="comments p-1 fs-4 d-flex flex-row gap-2">
                     <div>
 
-                <a href="#" className="text-muted w-100 text-active-primary">
-                    {/* comments and likes */}
-                    120 Comments
-                    </a> 
+                        <a href="#" className="text-muted w-100 text-active-primary">
+                        {/* comments and likes */}
+                        120 Comments
+                        </a> 
                     </div>
+
                     <div>
 
-                    <a href="#" className=" text-muted w-100">
-                    {/* comments and likes */}
-                     1 Share
-                    </a>             
+                        <a href="#" className=" text-muted w-100">
+                        {/* comments and likes */}
+                         {/* 120 Comments */}
+                        </a>             
                     </div>
                 </div>
             </div>
             {/* <!--begin::Toolbar--> */}
-            
             
             <div className="d-flex align-items-center mb-5 mt-5 border-top border-bottom p-1">
                 <div className="col-lg-3 ">
@@ -176,7 +182,6 @@ const Posts = () => {
                 </div>
             </div>
             
-            
             {/* <!--end::Toolbar--> */}
         </div>
         {/* <!--end::Post-->
@@ -205,8 +210,9 @@ const Posts = () => {
         </form>
         {/* <!--edit::Reply input--> */}
     </div>
-</div>
-  )
-}
-
-export default Posts
+      </div>
+      
+    )
+  }
+  
+  export default PhotoIncPosts
