@@ -1,9 +1,10 @@
 import React from 'react'
+import ProfHome from '../Components/Profile/ProfHome'
 
 const Profile = () => {
   return (
     <div>
-        <h1>Profile Page</h1>
+        <ProfHome />
     </div>
   )
 }

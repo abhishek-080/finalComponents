@@ -12,14 +12,14 @@ const GGuserHome = () => {
   return (
     <div className="wrapper d-flex d-flex-column bg-light  justify-content-between">
       {/* Side Nav start */}
-      <div className="sidenav">
+      <div className="sidenav ">
         <SideNav />
       </div>
       {/* side nav end 
       Profile Body start*/}
       
       <div className=" d-flex flex-nowrap justify-content-between ms-7">
-        <div className="middle-content col-lg-7 p-3">
+        <div className="middle-content col-lg-7 col-md-7 p-3">
 
         {/* post box start */}
           <div className="">
@@ -29,7 +29,7 @@ const GGuserHome = () => {
         {/* post box end 
         middle nav */}
 
-          <div className="" style={{position:"sticky", top:"-10px", zIndex:"99999" }}>
+          <div className="" style={{position:"sticky", top:"-10px", zIndex:"99" }}>
 
             <Middlenav />
           </div>
@@ -55,7 +55,7 @@ const GGuserHome = () => {
 
         {/* posts end
         follow suggest box start */}
-        <div className="col-lg-3 position-fixed" style={{right:"0px",height:"100vh", overflow:"scroll"}}>
+        <div className="col-lg-3 col-md-4 leftTrendings position-fixed" style={{right:"20px",height:"100vh", overflow:"scroll"}}>
             <div className="">
               {/* {/* <CardShowBox /> */}
               {/* <ProfileCard /> */}
