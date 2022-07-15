@@ -2,7 +2,7 @@ import React from 'react'
 
 const Trendingtags = () => {
     return (
-        <div className='mt-3 rounded border bg-white p-2' >
+        <div className='mt-3 trendings rounded border bg-white p-2' >
 
 
             <div className="card-header border-0 p-7">

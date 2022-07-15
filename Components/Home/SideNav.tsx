@@ -8,7 +8,7 @@ const SideNav = () => {
 
 	return (
 		<div>
-			<div id="kt_aside" className="aside bg-light aside-hoverable ms-7" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false	}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle" >
+			<div id="kt_aside" className="aside bg-light aside-hoverable" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false	}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle" >
 				{/* <!--begin::Brand--> */}
 				{/* <div className="aside-logo flex-column-auto" id="kt_aside_logo"> */}
 					{/* <!--begin::Logo--> */}
@@ -91,7 +91,7 @@ const SideNav = () => {
 											<img src="../user.png" alt="" height="30" width="auto" />
 										{/* <!--end::Svg Icon--> */}
 									</span>
-									<span className="menu-title fs-4 ms-2">Profile</span>
+									<span className="menu-title fs-5 ms-2">Profile</span>
 									<span className="menu-arrow"></span>
 								</span>
 								<div className="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="546" style={{ display: " none", overflow: "hidden" }}>
@@ -142,7 +142,7 @@ const SideNav = () => {
 										</span>
 										{/* <!--end::Svg Icon--> */}
 									</span>
-									<span className="menu-title fs-4 ms-2">Threads</span>
+									<span className="menu-title fs-5 ms-2">Threads</span>
 								</a>
 							</div>
 
@@ -155,7 +155,7 @@ const SideNav = () => {
 										</span>
 										{/* <!--end::Svg Icon--> */}
 									</span>
-									<span className="menu-title fs-4 ms-2">Following</span>
+									<span className="menu-title fs-5 ms-2">Following</span>
 								</a>
 							</div>
 
@@ -168,7 +168,7 @@ const SideNav = () => {
 										</span>
 										{/* <!--end::Svg Icon--> */}
 									</span>
-									<span className="menu-title fs-4 ms-2">Notifications</span>
+									<span className="menu-title fs-5 ms-2">Notifications</span>
 								</a>
 							</div>
 
@@ -181,7 +181,7 @@ const SideNav = () => {
 										</span>
 										{/* <!--end::Svg Icon--> */}
 									</span>
-									<span className="menu-title fs-4 ms-2">Messages</span>
+									<span className="menu-title fs-5 ms-2">Messages</span>
 								</a>
 							</div>
 							<div className="menu-item">
@@ -193,7 +193,7 @@ const SideNav = () => {
 										</span>
 										{/* <!--end::Svg Icon--> */}
 									</span>
-									<span className="menu-title fs-4 ms-2">Saved</span>
+									<span className="menu-title fs-5 ms-2">Saved</span>
 								</a>
 							</div>
 							</div>
