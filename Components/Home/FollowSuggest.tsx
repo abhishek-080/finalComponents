@@ -3,7 +3,7 @@ import React from 'react'
 
 const FollowSuggest = () => {
 	return (
-		<div className='mt-5 rounded border ' >
+		<div className='mt-5 followSuggest rounded border ' >
 
 			{/* 		
 		<Accordion defaultActiveKey="0">
