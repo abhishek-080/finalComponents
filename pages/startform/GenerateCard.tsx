@@ -109,9 +109,12 @@ const GenerateCard = () => {
 								<div className="col-md-6 pe-lg-12 d-flex justify-content-center flex-wrap" >
 								    <div className="row mb-5">
 								        <div className="col-md-12 mb-5 fv-row  fv-plugins-icon-container">
-								            <img src="cardGG.png" alt="card "  className="rounded w-350px mb-4" style={ { boxShadow: "10px 6px 10px rgba(0,0,0,0.5)",position:"relative" }}/>
-								            <h6 className="mt-4 p-1  text-white text-uppercase" style={{position:"absolute",top:"13rem" }}>{addressCard} </h6>
-								            <h6 className="mt-4 p-1 text-white text-uppercase" style={{position:"absolute",top:"2rem"}}>{title} </h6>
+								            {/* <img src="cardGG.png" alt="card "  className="rounded w-350px mb-4" style={ { boxShadow: "10px 6px 10px rgba(0,0,0,0.5)",position:"relative" }}/> */}
+											<img src="cardHolder.png" alt="card "  className="rounded w-350px mb-4 " style={ { boxShadow: "10px 6px 10px rgba(0,0,0,0.5)",position:"relative" }}/>
+								            {/* <h6 className="mt-4 p-1  text-white text-uppercase" style={{position:"absolute",top:"13rem" }}>{addressCard} </h6>
+								            <h6 className="mt-4 p-1 text-white text-uppercase" style={{position:"absolute",top:"2rem"}}>{title} </h6> */}
+											 <h6 className="mt-4 p-1  text-white text-uppercase fs-9" style={{position:"absolute",top:"21rem",left:"10rem" }}>{addressCard} </h6>
+								            <h6 className="mt-4 p-1 text-white text-uppercase fs-9" style={{position:"absolute",top:"18rem",left:"10rem"}}>{title} </h6>
 								        </div>
                                     </div>
 

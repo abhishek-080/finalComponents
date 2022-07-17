@@ -29,7 +29,7 @@ const GGuserHome = () => {
         {/* post box end 
         middle nav */}
 
-          <div className="" style={{position:"sticky", top:"-10px", zIndex:"99999" }}>
+          <div className="" style={{position:"sticky", top:"-10px", zIndex:"999" }}>
 
             <Middlenav />
           </div>
