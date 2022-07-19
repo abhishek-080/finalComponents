@@ -1,6 +1,8 @@
 import React from 'react'
+import ProfFollowers from './ProfFollowers';
 
 const ProfUserTop = () => {
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <div>
             <div className="card mb-5 mb-lg-8">
@@ -61,26 +63,32 @@ const ProfUserTop = () => {
                                     {/* <!--begin::Stats--> */}
                                     <div className="d-flex flex-nowrap mt-7 ">
                                         {/* <!--begin::Stat--> */}
-                                        <div className="btn border border-gray-300 btn-active-light-success min-w-125px py-3 px-4 me-6 mb-3">
+                                        <div className="btn border border-gray-300 btn-active-light-success min-w-125px py-3 px-4 me-6 mb-3" onClick={() => setModalShow(true)}>
+                                            
                                             {/* <!--begin::Number--> */}
-                                            <div className="d-flex align-items-center mt-2 p-1">
+                                            <div className="d-flex align-items-center mt-2 p-1" >
                                                 {/* <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg--> */}
 
                                                 {/* <!--end::Svg Icon--> */}
-                                                <div className="fs-2 fw-bolder counted" data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$">100</div>
+                                                <div className="fs-2 fw-bolder counted"  data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$">100</div>
                                             <div className="fw-bold fs-4 ms-3 text-gray-400">Followers</div>
                                             </div>
+                                            
                                             {/* <!--end::Number-->
 											<!--begin::Label--> */}
                                             {/* <!--end::Label--> */}
                                         </div>
+                                        <ProfFollowers
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
                                         {/* <!--end::Stat-->
 										<!--begin::Stat--> */}
                                         <div className="btn border border-gray-300 btn-active-light-success min-w-125px py-3 px-4 me-6 mb-3">
                                             {/* <!--begin::Number--> */}
                                             <div className="d-flex align-items-center mt-2 p-1">
                                                 <div className="fs-2 fw-bolder counted" data-kt-countup="true" data-kt-countup-value="80">80</div>
-                                            <div className="fw-bold fs-4 ms-3 text-gray-400">Following</div>
+                                            <div className="fw-bold fs-4 ms-3 text-gray-400" >Following</div>
                                             </div>
                                             {/* <!--end::Number-->
 												<!--begin::Label--> */}

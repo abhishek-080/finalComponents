@@ -23,7 +23,8 @@ const Home: NextPage = () => {
        {/* <Signinmodules /> */}
       
         {/* <UserHome />  */}
-        <GGuserHome />
+        <GGuserHome/>
+        {/* <GenerateCard/> */}
 
       </div>
     </div>

@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { Card } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { GiCancel } from 'react-icons/gi';
+
 
 const PreviewImage = (props) => {
      
@@ -39,33 +42,37 @@ const PreviewImage = (props) => {
         <div className="row">
             <form onSubmit={ onSubmit } className="form-inline">
                 <div className="form-group">
-                <label>Choose File to Upload: </label>
-                <input type="file" className="form-control" onChange={imageChange} accept="image/*"/>
-                </div> <br/>
-                <button type="submit" className="btn btn-success" >Upload File</button>
-            </form>
- 
-        {selectedImage && (
+                <label className="d-block mb-2">What's on your mind </label>
+                <textarea name="" id="" cols="60" rows="4" className="mb-n4"></textarea>
+                {selectedImage && (
+                 
           <div style={styles.preview}>
             <img
               src={URL.createObjectURL(selectedImage)}
               style={styles.image}
               alt="Thumb"
-              
             />
             <button onClick={removeSelectedImage} style={styles.delete}>
-              Remove This Image
+              <i className="fa-2x " > <GiCancel/> </i>
             </button>
           </div>
+        
         )}
+
+
+                <label className="d-block mt-4">Choose File to Upload: </label>
+                <input type="file" className="form-control" onChange={imageChange} accept="image/*"/>
+                </div> <br/>
+                <button type="submit" className="btn btn-success" >Upload File</button>
+            </form>
+ 
+       
 
         </div>
       </div>
       </div>
       </Modal.Body>
-		  <Modal.Footer>
-			<Button onClick={props.onHide}>Close</Button>
-		  </Modal.Footer>
+		 
 		</Modal>
     
   )
@@ -80,13 +87,14 @@ const styles = {
     marginTop: 50,
     display: "flex",
     flexDirection: "column",
+    position: "relative"
   },
-  image: { maxWidth: "50%", maxHeight: 200 },
+  image: { maxWidth: "100%", maxHeight: 320 },
   delete: {
     cursor: "pointer",
-    padding: 15,
-    background: "red",
-    color: "white",
     border: "none",
+    position:"absolute",
+    borderRadius:"10px"
+    
   },
 };
