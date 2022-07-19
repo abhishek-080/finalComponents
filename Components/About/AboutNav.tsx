@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 
-const ProfileMidNav = () => {
-    return (
-        <div className="card-body pb-0 middleNav">
+const AboutNav = () => {
+  return (
+    <div>
+         <div className="card-body pb-0 ">
             {/* <!--begin::Header--> */}
 
             <div className="row border  rounded ms-n4 me-n4">
@@ -13,14 +14,14 @@ const ProfileMidNav = () => {
                     {/* <!--begin::Nav item--> */}
                     <li className="nav-item mt-2">
                         <Link href={'/Profile'}>
-                            <a className="nav-link text-active-primary ms-0 me-10 py-5 active" href="#">Posts</a>
+                            <a className="nav-link text-active-primary ms-0 me-10 py-5" href="#">Posts</a>
                         </Link>
                     </li>
                     {/* <!--end::Nav item-->
 										<!--begin::Nav item--> */}
                    <li className="nav-item mt-2">
                         <Link href={'/About'}>
-                            <a className="nav-link text-active-primary ms-0 me-10 py-5" href="#">About</a>
+                            <a className="nav-link text-active-primary ms-0 me-10 py-5 active" href="#">About</a>
                         </Link>
                     </li>
                     {/* <!--end::Nav item-->
@@ -83,8 +84,8 @@ const ProfileMidNav = () => {
                 </div>
             </div>
         </div>
-
-    )
+    </div>
+  )
 }
 
-export default ProfileMidNav
+export default AboutNav
