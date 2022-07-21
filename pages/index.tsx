@@ -16,14 +16,14 @@ const Home: NextPage = () => {
   return (
     <div>
 
-      {/* <UserStart /> */}
+      <UserStart />
     {/* <GenerateCard /> */}
        {/* <NavbarGG /> */}
       <div  className={styles.container}>
        {/* <Signinmodules /> */}
       
         {/* <UserHome />  */}
-        <GGuserHome />
+        {/* <GGuserHome /> */}
 
       </div>
     </div>

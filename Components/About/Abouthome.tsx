@@ -23,7 +23,7 @@ const Abouthome = () => {
           </div>
 
 
-          <div className="midNav" style={{position:"sticky", top:"-20px", zIndex:"99999"}}>
+          <div className="midNav" style={{position:"sticky", top:"-20px", zIndex:"999"}}>
             <AboutNav />
           </div>
 
@@ -50,8 +50,11 @@ const Abouthome = () => {
 
             </div>
 
-            <div className="col-lg-5 " >
+            <div className="col-lg-5 stickyCardab"  >
+              <div>
+
               <AbCard />  
+              </div>
             </div>
           </div>
 

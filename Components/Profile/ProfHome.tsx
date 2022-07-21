@@ -13,19 +13,19 @@ const ProfHome = () => {
       <div>
         {/* <ProfNav /> */}
       </div>
-      <div className='col-lg-10 d-flex flex-column  p-5'>
+      <div className='d-flex col-lg-10 col-sm-12 flex-column justify-content-between p-5'>
 
-        <div className="profPhoto">
+        <div className="profPhoto col-sm-12">
           <ProfUserTop />
         </div>  
         
 
-        <div className="midNav">
+        <div className="midNav ">
           <ProfileMidNav />
         </div>
 
         {/* Body start */}
-        <div className="d-flex">
+        <div className="d-flex ">
 
           {/* left contents */}
 
