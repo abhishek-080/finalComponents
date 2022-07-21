@@ -23,7 +23,6 @@ const Home: NextPage = () => {
        {/* <Signinmodules /> */}
       
         {/* <UserHome />  */}
-        {/* <GGuserHome /> */}
 
       </div>
     </div>

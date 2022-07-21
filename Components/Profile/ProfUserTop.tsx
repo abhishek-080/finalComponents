@@ -1,4 +1,5 @@
 import React from 'react'
+import ProfFollowers from './ProfFollowers';
 
 const ProfUserTop = () => {
     return (
@@ -77,8 +78,6 @@ const ProfUserTop = () => {
                                 </div>
 
                                 {/* follow annd followers */}
-
-
                                 {/* <!--end::User */}
                             </div>
                             {/* <!--end::Title-->
