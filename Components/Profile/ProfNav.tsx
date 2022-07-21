@@ -28,7 +28,7 @@ const ProfNav = () => {
 										</span>
 										{/* <!--end::Svg Icon--> */}
 									</span>
-									<span className="menu-title fs-4 ms-2">About</span>
+									<span className="menu-title fs-4 ms-2">Identity</span>
 								</a>
 							</div>
 
@@ -89,10 +89,7 @@ const ProfNav = () => {
 					</div>
 					{/* <!--end::Aside Menu--> */}
 				</div>
-				{/* <!--end::Aside menu-->
-					<!--begin::Footer--> */}
-				
-				{/* <!--end::Footer--> */}
+
 			</div>
 			<div className="d-flex align-items-center d-lg-none ms-n2 me-2" title="Show aside menu">
 				<div className="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px" id="kt_aside_mobile_toggle">

@@ -5,7 +5,7 @@ import router, { useRouter } from 'next/router'
 const GraduateForm = () => {
   return (
     <div>
-         <div className="d-flex flex-column flex-root">
+         <div className="d-flex flex-column bg-white flex-root">
 			<div className="d-flex flex-column flex-lg-row flex-column-fluid stepper stepper-pills stepper-column" id="kt_create_account_stepper">
 				{/* <!--begin::Aside--> */}
 				{/* <div className="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten shadow-sm">

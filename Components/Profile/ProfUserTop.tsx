@@ -2,24 +2,26 @@ import React from 'react'
 import ProfFollowers from './ProfFollowers';
 
 const ProfUserTop = () => {
-    const [modalShow, setModalShow] = React.useState(false);
     return (
         <div>
-            <div className="card mb-5 mb-lg-8">
-                <div className="card-body pt-9 mt-n3 bg-dark rounded p-0">
+            <div className="card mb-5 mb-lg-8 ">
+                <div className="card-body bg-dark rounded p-0">
+                    <div className="coverimg" style={{ maxHeight: "300px", overflow: "hidden" }}>
+                        <img src="../galaxy.jpg" alt="image" style={{ width: "100%", height: "auto" }} />
+                    </div>
                     {/* <!--begin::Details--> */}
-                    <div className="d-flex flex-wrap flex-sm-nowrap bg-white p-5" style={{ marginTop: "200px", marginBottom: "-50px" }}>
-                       
-                         {/* <!--begin: Pic--> */}
+                    <div className="d-flex flex-wrap flex-sm-nowrap bg-white p-5" style={{ marginTop: "00px", marginBottom: "-50px" }}>
 
-                        
+                        {/* <!--begin: Pic--> */}
+
+
                         <div className="me-7 mb-4 p-0">
                             <div className="symbol symbol-100px symbol-lg-200px symbol-fixed position-relative ms-6 mt-2 " >
-                                <img src="/assets/media/avatars/300-1.jpg" alt="image" style={{ borderRadius: "100px", marginTop: "-70px", border:"5px solid white" }} />
+                                <img src="/assets/media/avatars/300-1.jpg" alt="image" style={{ borderRadius: "100px", marginTop: "-70px", border: "5px solid white" }} />
                             </div>
                         </div>
                         {/* <!--end::Pic-->
-				<!--begin::Info--> */}
+				        <!--begin::Info--> */}
                         <div className="flex-grow-1 rounded">
                             {/* <!--begin::Title--> */}
                             <div className="d-flex justify-content-between flex-wrap mb-2">
@@ -34,101 +36,59 @@ const ProfUserTop = () => {
                                             </span>
                                             {/* <!--end::Svg Icon--> */}
                                         </a>
-                                        <a href="#" className="btn btn-sm btn-light-success fw-bold ms-2 fs-8 py-1 px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Upgrade to Pro</a>
+                                        {/* <a href="#" className="btn btn-sm btn-light-success fw-bold ms-2 fs-8 py-1 px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Upgrade to Pro</a> */}
                                     </div>
                                     {/* <!--end::Name-->
 							<!--begin::Info--> */}
-                                    <div className="d-flex flex-column fw-bold fs-6 mb-4 pe-2">
-                                        <a href="#" className="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2" >
-                                            <span className="svg-icon svg-icon-4 me-1 bg-light p-2 rounded">
+                                    <div>
+                                         <div className="d-flex flex-column fw-bold fs-6 mb-4 pe-2">
+
+                                            {/* <a href="#" className="d-flex align-items-center text-gray-400 me-5 mb-2" > */}
+                                            <span className="svg-icon text-gray-400 svg-icon-4 mt-n2 me-1 p-2 ">
                                                 Web Developer
                                             </span>
-                                        </a>
-                                        <span className="text-gray-900 ms-2">
-                                            Rock n Roll
-                                        </span>
+                                            {/* </a> */}
 
+                                            <div className='d-flex mt-3 flex-nowrap'>
+                                                <div className="text-gray-900  fs-4 ms-2">
+                                                    <a href="#">
+
+                                                        70 Followers
+                                                    </a>
+                                                </div>
+                                                <div className="text-gray-900 fs-4 ms-4">
+                                                    <a href="#">
+
+                                                        90 Following
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <span className="text-gray-900 ms-2 mt-2">
+                                                Rock n Roll
+                                            </span>
+
+                                        </div>
                                     </div>
-                                    
+
                                     {/* <!--end::Info--> */}
 
-                                 
+
 
                                 </div>
 
                                 {/* follow annd followers */}
-                                <div className="d-flex flex-wrap justify-content-end  flex-stack">
-                                {/* <!--begin::Wrapper--> */}
-                                <div className="d-flex mt-4 ms-2">
-                                    {/* <!--begin::Stats--> */}
-                                    <div className="d-flex flex-nowrap mt-7 ">
-                                        {/* <!--begin::Stat--> */}
-                                        <div className="btn border border-gray-300 btn-active-light-success min-w-125px py-3 px-4 me-6 mb-3" onClick={() => setModalShow(true)}>
-                                            
-                                            {/* <!--begin::Number--> */}
-                                            <div className="d-flex align-items-center mt-2 p-1" >
-                                                {/* <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg--> */}
-
-                                                {/* <!--end::Svg Icon--> */}
-                                                <div className="fs-2 fw-bolder counted"  data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$">100</div>
-                                            <div className="fw-bold fs-4 ms-3 text-gray-400">Followers</div>
-                                            </div>
-                                            
-                                            {/* <!--end::Number-->
-											<!--begin::Label--> */}
-                                            {/* <!--end::Label--> */}
-                                        </div>
-                                        <ProfFollowers
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-          />
-                                        {/* <!--end::Stat-->
-										<!--begin::Stat--> */}
-                                        <div className="btn border border-gray-300 btn-active-light-success min-w-125px py-3 px-4 me-6 mb-3">
-                                            {/* <!--begin::Number--> */}
-                                            <div className="d-flex align-items-center mt-2 p-1">
-                                                <div className="fs-2 fw-bolder counted" data-kt-countup="true" data-kt-countup-value="80">80</div>
-                                            <div className="fw-bold fs-4 ms-3 text-gray-400" >Following</div>
-                                            </div>
-                                            {/* <!--end::Number-->
-												<!--begin::Label--> */}
-                                            {/* <!--end::Label--> */}
-                                        </div>
-                                        
-                                    </div>
-                                    <div>
-                                        
-                                    </div>
-                                </div>
-
-                                
-                                
-                        {/* edit cover */}
-                        <div className="edit-prof  " >
-                                        <label className="btn  btn-icon btn-circle btn-active-light-primary w-50px h-50px bg-light" data-kt-image-input-action="change" data-bs-toggle="tooltip" data-kt-initialized="1" style={{marginTop:"30px" }}>
-									    	<i className="bi bi-pencil-fill fs-3" />
-									    	{/* <!--begin::Inputs--> */}
-									    	{/* <input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
-									    	<input type="hidden" name="avatar_remove" /> */}
-									    	{/* <!--end::Inputs--> */}
-									    </label>
-                                </div>
-                        {/* end */}
-
-                               
-                                </div>
-                                
                                 {/* <!--end::User */}
                             </div>
                             {/* <!--end::Title-->
 							<!--begin::Stats--> */}
-                           
+
 
                             {/* <!--end::Stats--> */}
                         </div>
                         {/* <!--end::Info--> */}
                     </div>
-                    
+
 
                     {/* <!--end::Details--> */}
                 </div>

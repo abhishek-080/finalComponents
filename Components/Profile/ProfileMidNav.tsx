@@ -6,7 +6,7 @@ const ProfileMidNav = () => {
         <div className="card-body pb-0 middleNav">
             {/* <!--begin::Header--> */}
 
-            <div className="row border  rounded ms-n4 me-n4">
+            <div className="row rounded ms-n4 me-n4">
 
 
                 <ul className="d-flex justify-content-center nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder bg-white p-3 rounded">

@@ -4,7 +4,7 @@ import router, { useRouter } from 'next/router'
 
 const Workxp = () => {
   return (
-        <div className="d-flex flex-column flex-root">
+        <div className="d-flex bg-white flex-column flex-root">
 			<div className="d-flex flex-column flex-lg-row flex-column-fluid stepper justify-content-space-evenly stepper-pills stepper-column" id="kt_create_account_stepper">
 				{/* <!--begin::Body--> */}
 				<div className="col-lg-8 d-flex flex-column flex-lg-row-fluid py-10">

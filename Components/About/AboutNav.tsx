@@ -7,7 +7,7 @@ const AboutNav = () => {
          <div className="card-body pb-0 ">
             {/* <!--begin::Header--> */}
 
-            <div className="row border  rounded ms-n4 me-n4">
+            <div className="row rounded ms-n4 me-n4">
 
 
                 <ul className="d-flex justify-content-center nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder bg-white p-3 rounded">
@@ -21,7 +21,7 @@ const AboutNav = () => {
 										<!--begin::Nav item--> */}
                    <li className="nav-item mt-2">
                         <Link href={'/About'}>
-                            <a className="nav-link text-active-primary ms-0 me-10 py-5 active" href="#">About</a>
+                            <a className="nav-link text-active-primary ms-0 me-10 py-5 active" href="#">Identity</a>
                         </Link>
                     </li>
                     {/* <!--end::Nav item-->
